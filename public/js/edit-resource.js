@@ -1,5 +1,4 @@
-// Function to open the edit modal and pre-fill it with the selected resource's
-data
+// Function to open the edit modal and pre-fill it with the selected resource's data
 function editResource(data) {
    var selectedResource = JSON.parse(data);
    // Pre-fill the modal input fields with the current resource details
