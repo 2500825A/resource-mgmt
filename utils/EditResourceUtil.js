@@ -11,7 +11,7 @@ const data = await fs.readFile(RESOURCES_FILE, 'utf8');
 resources = JSON.parse(data);
 } catch (err) {
 if (err.code === 'ENOENT') {
-return res.status(404).json({ message: 'No resources found toedit.' });
+return res.status(404).json({ message: 'No resources found to edit.' });
 } else {
 throw err;
 }
