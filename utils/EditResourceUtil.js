@@ -30,7 +30,7 @@ owner: owner || resources[resourceIndex].owner
 };
 await fs.writeFile(RESOURCES_FILE, JSON.stringify(resources, null, 2),
 'utf8');
-return res.status(200).json({ message: 'Resource updated successfully!', 
+return res.status(200).json({ message: 'Resource updated successfully!',
 resource: resources[resourceIndex] });
 } catch (error) {
 console.error(error);
